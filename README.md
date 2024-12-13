@@ -30,6 +30,10 @@ To extract endpoints from a JavaScript file:
 ```bash
 ./extract_endpoints.py path/to/file.js
 ```
+or
+```bash
+./extract_endpoints.py https://example.com/path/to/file.js
+```
 
 ### Show Full Lines
 
