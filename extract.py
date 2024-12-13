@@ -15,13 +15,20 @@ def extract_endpoints(content, show_line=False):
     REGEX = re.compile(r'(["\'])(/[^"\']*[\w\d\W\?/&=#.!:_-]*?)\1')
     matched_endpoints = []
 
-    for match in REGEX.finditer(content):
+    print("\n[ Extracted Endpoints ]")
+    print("-" * 60)
+    for idx, match in enumerate(REGEX.finditer(content), start=1):
         full_match, endpoint = match.group(0), match.group(2)
         if endpoint not in matched_endpoints:
             matched_endpoints.append(endpoint)
-            print(endpoint)
+            print(f"{idx:02d}. Endpoint: {endpoint}")
             if show_line:
-                print(EXCERPT_FORMAT % full_match)
+                print(f"    Full Match: {full_match}")
+                print("-" * 60)
+    if not matched_endpoints:
+        print("No endpoints found.")
+    print("-" * 60)
+
 
 # Function to get content from a file or URL
 def get_content(source):
