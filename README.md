@@ -37,6 +37,7 @@ To display the full line containing the endpoint, use the `--show-line` flag:
 ```bash
 ./extract_endpoints.py path/to/file.js --show-line
 ```
+<img src="https://github.com/AexonSec/relative-url-extractor-v2/blob/main/demo.PNG" />
 
 ### Example
 
