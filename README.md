@@ -66,13 +66,42 @@ With the `--show-line` flag:
 ```
 Output:
 ```
-/api/v1/users
-------------------------------------------------
-const apiEndpoint = "/api/v1/users";
+[ Extracted Endpoints ]
+------------------------------------------------------------
+01. Endpoint: /participants
+    Full Match: "participants"
+------------------------------------------------------------
+02. Endpoint: /bugs
+    Full Match: "/bugs"
+------------------------------------------------------------
+03. Endpoint: /invitations/
+    Full Match: "/invitations/"
+------------------------------------------------------------
+04. Endpoint: /
+    Full Match: "/"
+------------------------------------------------------------
+05. Endpoint: /directory?query=type%3Ahackerone
+    Full Match: "/directory?query=type%3Ahackerone"
+------------------------------------------------------------
+06. Endpoint: /0h8
+    Full Match: "/0h8"
+------------------------------------------------------------
+07. Endpoint: /4Ms
+    Full Match: "/4Ms"
+------------------------------------------------------------
+08. Endpoint: /6Z6
+    Full Match: "/6Z6"
+------------------------------------------------------------
+09. Endpoint: /6ei
+    Full Match: "/6ei"
+------------------------------------------------------------
+10. Endpoint: /820
+    Full Match: "/820"
+------------------------------------------------------------
+11. Endpoint: /programs/search?query=bounties%3Ayes&sort=name%3Aascending&limit=1000
+    Full Match: "/programs/search?query=bounties%3Ayes&sort=name%3Aascending&limit=1000"
+------------------------------------------------------------
 
-/api/v2/orders
-------------------------------------------------
-const anotherEndpoint = '/api/v2/orders';
 ```
 
 ## Error Handling
